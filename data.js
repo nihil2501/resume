@@ -1,4 +1,4 @@
-{
+export default {
   "basics": {
     "name": "Oren Mittman",
     "label": "Software Engineer",
