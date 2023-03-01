@@ -10,6 +10,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "mustache": "^4.2.0"
+    "mustache": "^4.2.0",
+    "puppeteer-core": "^19.7.2"
   }
 }
