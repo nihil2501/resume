@@ -1,21 +1,23 @@
-import data from './data.js'
+import data from './src/data.js'
 import Mustache from 'mustache'
-import { readFileSync, writeFileSync, realpathSync } from 'node:fs'
+import { readFileSync, writeFileSync, realpathSync, mkdirSync } from 'node:fs'
 import puppeteer from 'puppeteer-core';
 
-const template = readFileSync('template.mustache', 'utf8');
+const template = readFileSync('src/template.mustache', 'utf8');
 const rendered = Mustache.render(template, data);
 
-const htmlFileName = 'resume.html';
-writeFileSync(htmlFileName, rendered);
+const distDirName = 'dist';
+mkdirSync(distDirName, {recursive: true});
 
-if (process.argv[2] !== 'preview') {
-  const browser = await puppeteer.launch({
-    executablePath: "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-  });
+const htmlFilePath = `${distDirName}/resume.html`;
+writeFileSync(htmlFilePath, rendered);
 
-  const page = await browser.newPage();
-  await page.goto(`file://${realpathSync(htmlFileName)}`);
-  await page.pdf({path: 'resume.pdf'});
-  await browser.close();
-}
+const browser = await puppeteer.launch({
+  executablePath: "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+});
+
+const page = await browser.newPage();
+await page.goto(`file://${realpathSync(htmlFilePath)}`);
+
+await page.pdf({path: `${distDirName}/resume.pdf`});
+await browser.close();

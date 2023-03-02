@@ -52,57 +52,85 @@ export default {
       "endDate": "2011-06-01"
     }
   ],
-  "skills": {
-    "languages": {
-      "expert": [
-        "Ruby"
-      ],
-      "intermediate": [],
-      "novice": [
-        "Typescript",
-        "Python",
-        "Elixir",
-        "Rust"
+  "skills": [
+    {
+      "name": "languages",
+      "levels": [
+        {
+          "name": "expert",
+          "items": [
+            "Ruby"
+          ]
+        },
+        {
+          "name": "novice",
+          "items": [
+            "Typescript",
+            "Python",
+            "Elixir",
+            "Rust"
+          ]
+        }
       ]
     },
-    "frameworks": {
-      "expert": [
-        "Ruby on Rails",
-        "Sidekiq"
-      ],
-      "intermediate": [],
-      "novice": [
-        "Phoenix",
-        "React"
+    {
+      "name": "frameworks",
+      "levels": [
+        {
+          "name": "expert",
+          "items": [
+            "Ruby on Rails",
+            "Sidekiq"
+          ]
+        },
+        {
+          "name": "novice",
+          "items": [
+            "Phoenix",
+            "React"
+          ]
+        }
       ]
     },
-    "databases": {
-      "expert": [
-        "SQL"
-      ],
-      "intermediate": [],
-      "novice": [
-        "Redis",
-        "Elasticsearch"
+    {
+      "name": "databases",
+      "levels": [
+        {
+          "name": "expert",
+          "items": [
+            "SQL"
+          ]
+        },
+        {
+          "name": "novice",
+          "items": [
+            "Redis",
+            "Elasticsearch"
+          ]
+        }
       ]
     },
-    "infrastructure": {
-      "expert": [],
-      "intermediate": [],
-      "novice": [
-        "AWS",
-        "Kubernetes",
-        "Datadog"
+    {
+      "name": "infrastructure",
+      "levels": [
+        {
+          "name": "novice",
+          "items": [
+            "AWS",
+            "Kubernetes",
+            "Datadog"
+          ]
+        }
       ]
-    },
-    "tools": [
-      "TDD",
-      "Git & GitHub",
-      "Jira",
-      "Confluence",
-      "Agile"
-    ]
-  },
+    }
+  ],
+  "tools": [
+    "TDD",
+    "Git & GitHub",
+    "Jira",
+    "Confluence",
+    "Agile"
+  ],
   "interests": [
     "Distributed Systems",
     "Programming Languages",

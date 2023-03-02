@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+  body {
+    text-transform: lowercase;
+    font-family: monospace;
+    background-color: rgb(200,225,225);
+  }
+  .container {
+    display: flex;
+  }
+  .container .sidebar {
+    flex: 1;
+  }
+  .container .main-content {
+    flex: 3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+
+    <div class="basics">
+      {{#basics}}
+      <img src={{image}} height=100 width=100 />
+      <h1>{{name}}</h1>
+      <p>{{label}}</p>
+      <p>{{email}}</p>
+      <p>{{phone}}</p>
+      <a href={{url}}>site</a>
+      {{/basics}}
+    </div>
+
+    <div class="skills">
+      {{#skills}}
+      <div class="skill">
+        <p>{{name}}</p>
+        {{#levels}}
+        <dt>{{name}}</dt>
+        {{#items}}
+        <dd>{{.}}</dd>
+        {{/items}}
+        {{/levels}}
+      </div>
+      {{/skills}}
+    </div>
+
+    <div class="tools">
+      <p>Tools</p>
+      {{#tools}}
+      <p>{{.}}</p>
+      {{/tools}}
+    </div>
+
+  </div>
+  <div class="main-content">
+
+    <div class="works">
+      {{#work}}
+      <div class="work">
+        <h3>{{name}}</h3>
+      </div>
+      {{/work}}
+    </div>
+
+    <div class="educations">
+      {{#education}}
+      <div class="education">
+        <h3>{{institution}}</h3>
+      </div>
+      {{/education}}
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
