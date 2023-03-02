@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "preview": "node index.js preview && open resume.html"
   },
   "author": "",
   "license": "ISC",

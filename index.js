@@ -9,11 +9,13 @@ const rendered = Mustache.render(template, data);
 const htmlFileName = 'resume.html';
 writeFileSync(htmlFileName, rendered);
 
-const browser = await puppeteer.launch({
-  executablePath: "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-});
+if (process.argv[2] !== 'preview') {
+  const browser = await puppeteer.launch({
+    executablePath: "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+  });
 
-const page = await browser.newPage();
-await page.goto(`file://${realpathSync(htmlFileName)}`);
-await page.pdf({path: 'resume.pdf'});
-await browser.close();
+  const page = await browser.newPage();
+  await page.goto(`file://${realpathSync(htmlFileName)}`);
+  await page.pdf({path: 'resume.pdf'});
+  await browser.close();
+}
