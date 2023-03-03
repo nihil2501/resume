@@ -21,7 +21,8 @@ await page.goto(`file://${realpathSync(htmlFilePath)}`);
 
 await page.pdf({
   path: `${distDirName}/resume.pdf`,
-  printBackground: true
+  printBackground: true,
+  format: 'letter'
 });
 
 await browser.close();

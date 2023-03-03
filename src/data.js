@@ -24,16 +24,16 @@ export default {
       "description": "Cannabis marketplace",
       "position": "Senior Backend Engineer",
       "url": "https://www.leafly.com",
-      "startDate": "2018",
-      "endDate": "2022",
+      "startDate": "02.2018",
+      "endDate": "11.2022",
       "summary": "Collaborated within the product organization to design, implement, and maintain the backend systems powering Leafly's marketplace applications. Specialized on the platforms that enable retailers to integrate with their other marketplace software and, as a consequence, modeled Leafly's foundational business logic.",
       "highlights": [
-        "Designed, implemented, and maintained a robust integration platform and associated API for synchronizing inventory data from several dozen business partners on behalf of tens of thousands of retailers",
-        "Built the backend for an application that allows retailers with integrated inventories to associate their menus with a vast canonical product catalog",
+        "Designed, implemented, and maintained a robust integration platform and API for synchronizing inventory data from several dozen point-of-sale system vendors on behalf of tens of thousands of retailers",
+        "Built the backend for an application that allows retailers with integrated inventories to associate their e-commerce menus with a vast canonical product catalog",
         "Built the backend for an admin-facing order dashboard supporting complex features like order modifications, alerting, and other realtime behaviors",
-        "Collaborated on the first versions of newer integration offerings on considerably accelerated timelines, including a shopper integration with Uber Eats and the prototype for a webhook-based ordering API",
-        "Designed a unifying data model for Leafly's assortment of integration offerings such that they could be administered consistently from a single application",
-        "Developed a technologically low-commitment micro-system for exactly-once execution of offline workloads undergirding multiple of the aforementioned backend services"
+        "Collaborated on the first versions of newer integration offerings on considerably accelerated timelines, including an integration with Uber Eats's shopping experience as well as the prototype of a webhooks API for integrating orders with POS systems",
+        "Designed a unifying data model for Leafly's assortment of integration offerings such that they could be administered consistently across multiple applications",
+        "Developed a technologically low-commitment micro-system for exactly-once execution of offline workloads that undergirds multiple of the aforementioned backend services"
       ]
     },
     {
@@ -42,13 +42,13 @@ export default {
       "location": "Baltimore, MD",
       "description": "Online restaurant ordering and delivery",
       "position": "Software Engineer",
-      "startDate": "2011",
-      "endDate": "2018",
+      "startDate": "11.2011",
+      "endDate": "12.2017",
       "summary": "Worked fullstack across three generations of OrderUp's technology. The product grew to include an at-the-time cutting-edge feature, online delivery tracking, and was eventually acquired by Groupon.",
       "highlights": [
-        "Worked fullstack across three generations of OrderUp's technology, participating in the migration efforts for each generation",
+        "Worked fullstack across three generations of OrderUp's technology, participating in the migration efforts of each generation",
         "Developed the e-commerce integration systems that synchronized menus and orders with OrderUp's business partners",
-        "Built admin order management systems including an order dashboard and order notification system"
+        "Built admin order management applications including an order dashboard and order notification system"
       ]
     }
   ],
@@ -58,7 +58,7 @@ export default {
       "url": "https://www.jhu.edu",
       "area": "Mathematics",
       "studyType": "Bachelor of Arts",
-      "endDate": "2011"
+      "endDate": "05.2011"
     }
   ],
   "skills": [

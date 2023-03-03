@@ -1,5 +1,6 @@
 body {
-  font-family: monospace;
+  font-family: system-ui;
+  font-size: 14px;
   background: rgb(200,215,245);
   color: rgb(30,30,30);
   display: flex;
@@ -8,7 +9,7 @@ body {
 .container {
   display: flex;
   max-width: 800px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .container .sidebar {
   flex: 1;
@@ -47,7 +48,7 @@ dd {
   margin-left: 0px;
 }
 .identity {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .skills > dd {
   margin-bottom: 25px; 
@@ -57,7 +58,6 @@ dd {
 }
 .basics .identity-contact {
   margin-top: 10px;
-  font-size: 11;
 }
 .work, .education {
   margin-top: 20px;
@@ -66,28 +66,29 @@ dd {
   margin-top: 0px;
 }
 .work .work-highlight > li {
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
-.experience .experience-label {
+.experience .experience-label, .experience .experience-date {
   font-size: 16px;
-  margin-bottom: 10px;
+}
+.experience .experience-name {
+  display: flex;
+}
+.experience .experience-name .experience-name-acquirer {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.experience .experience-name .experience-name-acquirer, .experience .experience-date {
+  align-self: flex-end;
+  margin-bottom: 5px;
 }
 .education.experience .experience-label {
-  font-size: 16px;
   margin-bottom: 10px;
 }
 .experience .experience-summary {
   display: flex;
   justify-content: space-between;
 }
-.experience .experience-summary > h2 {
+.experience .experience-summary h2 {
   margin-bottom: 5px;
-}
-.experience .experience-date {
-  font-size: 16px;
-  margin-block-start: 16.185px;
-  margin-block-end: 5px;
-  margin-bottom: 5px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }

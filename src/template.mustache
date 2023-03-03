@@ -10,7 +10,12 @@
       {{#work}}
       <div class="work experience">
         <div class="experience-summary">
-          <h2>{{name}}</h2>
+          <div class="experience-name">
+            <h2>{{name}}</h2>
+            {{#acquirerName}}
+            <em class="experience-name-acquirer">acquired by {{acquirerName}}</em>
+            {{/acquirerName}}
+          </div>
           <div class="experience-date">{{startDate}} → {{endDate}}</div>
         </div>
         <div class="experience-label">{{position}}</div>
