@@ -54,18 +54,18 @@ export default {
   ],
   "skills": [
     {
-      "name": "languages",
+      "name": "Languages",
       "levels": [
         {
-          "name": "expert",
+          "name": "Expert",
           "items": [
             "Ruby"
           ]
         },
         {
-          "name": "novice",
+          "name": "Novice",
           "items": [
-            "Typescript",
+            "TypeScript",
             "Python",
             "Elixir",
             "Rust"
@@ -74,17 +74,17 @@ export default {
       ]
     },
     {
-      "name": "frameworks",
+      "name": "Frameworks",
       "levels": [
         {
-          "name": "expert",
+          "name": "Expert",
           "items": [
             "Ruby on Rails",
             "Sidekiq"
           ]
         },
         {
-          "name": "novice",
+          "name": "Novice",
           "items": [
             "Phoenix",
             "React"
@@ -93,16 +93,16 @@ export default {
       ]
     },
     {
-      "name": "databases",
+      "name": "Databases",
       "levels": [
         {
-          "name": "expert",
+          "name": "Expert",
           "items": [
             "SQL"
           ]
         },
         {
-          "name": "novice",
+          "name": "Novice",
           "items": [
             "Redis",
             "Elasticsearch"
@@ -111,10 +111,10 @@ export default {
       ]
     },
     {
-      "name": "infrastructure",
+      "name": "Infrastructure",
       "levels": [
         {
-          "name": "novice",
+          "name": "Novice",
           "items": [
             "AWS",
             "Kubernetes",

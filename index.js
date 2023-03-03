@@ -19,5 +19,9 @@ const browser = await puppeteer.launch({
 const page = await browser.newPage();
 await page.goto(`file://${realpathSync(htmlFilePath)}`);
 
-await page.pdf({path: `${distDirName}/resume.pdf`});
+await page.pdf({
+  path: `${distDirName}/resume.pdf`,
+  printBackground: true
+});
+
 await browser.close();
