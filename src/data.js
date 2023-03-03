@@ -77,7 +77,8 @@ export default {
             "TypeScript",
             "Python",
             "Elixir",
-            "Rust"
+            "Rust",
+            "Elm"
           ]
         }
       ]
