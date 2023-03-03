@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w dist/style.css -w src -e js,mustache index.js",
-    "clean": "rm resume.*"
+    "start": "nodemon -w src -e css,js,mustache index.js",
+    "clean": "rm -r dist"
   },
   "author": "",
   "license": "ISC",
