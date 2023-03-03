@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w src -e js,mustache index.js",
+    "start": "nodemon -w dist/style.css -w src -e js,mustache index.js",
     "clean": "rm resume.*"
   },
   "author": "",

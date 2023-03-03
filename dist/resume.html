@@ -1,100 +1,70 @@
 <html>
 <head>
-<style>
-  body {
-    font-family: monospace;
-    background: rgb(200,200,225);
-    color: rgb(30,30,30);
-  }
-  .container {
-    display: flex;
-    padding-top: 10px;
-  }
-  .container .sidebar {
-    flex: 1;
-    padding-right: 10px;
-  }
-  .container .main-content {
-    flex: 3;
-  }
-  .section {
-    margin-bottom: 20px;
-  }
-  .section > * {
-    margin: 0;
-  }
-  dl, ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 10;
-  }
-  ul {
-    list-style: square;
-    padding-left: 5px;
-  }
-  dd {
-    margin: 0;
-  }
-  .portrait {
-    display: flex;
-    justify-content: center;
-    padding-right: 40px;
-    margin-bottom: 10px;
-  }
-  .skills > dd {
-   margin-bottom: 25px; 
-  }
-  .skills .skill-levels > dd {
-    margin-bottom: 5px;
-  }
-  .basics .identity-contact {
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size: 11;
-  }
-  .identity .identity-label {
-    font-size: 16px;
-  }
-</style>
+<link href="style.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container">
-  <div class="main-content">
+  <div class="subcontainer main-content">
 
     <div class="works">
-      <div class="work">
-        <h3>Leafly</h3>
+      <div class="work experience">
+        <div class="experience-summary">
+          <h2>Leafly</h2>
+          <div class="experience-date">2018 → 2022</div>
+        </div>
+        <div class="experience-label">Senior Backend Engineer</div>
+        <ul class="work-highlight">
+          <li>Designed, implemented, and maintained a robust integration platform and associated API for synchronizing inventory data from several dozen business partners on behalf of tens of thousands of retailers</li>
+          <li>Built the backend for an application that allows retailers with integrated inventories to associate their menus with a vast canonical product catalog</li>
+          <li>Built the backend for an admin-facing order dashboard supporting complex features like order modifications, alerting, and other realtime behaviors</li>
+          <li>Collaborated on the first versions of newer integration offerings on considerably accelerated timelines, including a shopper integration with Uber Eats and the prototype for a webhook-based ordering API</li>
+          <li>Designed a unifying data model for Leafly&#39;s assortment of integration offerings such that they could be administered consistently from a single application</li>
+          <li>Developed a technologically low-commitment micro-system for exactly-once execution of offline workloads undergirding multiple of the aforementioned backend services</li>
+        </ul>
       </div>
-      <div class="work">
-        <h3>OrderUp (acquired by Groupon)</h3>
+      <div class="work experience">
+        <div class="experience-summary">
+          <h2>OrderUp</h2>
+          <div class="experience-date">2011 → 2018</div>
+        </div>
+        <div class="experience-label">Software Engineer</div>
+        <ul class="work-highlight">
+          <li>Worked fullstack across three generations of OrderUp&#39;s technology, participating in the migration efforts for each generation</li>
+          <li>Developed the e-commerce integration systems that synchronized menus and orders with OrderUp&#39;s business partners</li>
+          <li>Built admin order management systems including an order dashboard and order notification system</li>
+        </ul>
       </div>
     </div>
 
     <div class="educations">
-      <div class="education">
-        <h3>Johns Hopkins University</h3>
+      <div class="education experience">
+        <div class="experience-summary">
+          <h2>Johns Hopkins University</h2>
+          <div class="experience-date">2011</div>
+        </div>
+        <div class="experience-label">Bachelor of Arts — Mathematics</div>
       </div>
     </div>
 
   </div>
-  <div class="sidebar">
+  <div class="subcontainer sidebar">
 
     <div class="basics">
-
-      <div class="portrait section">
-        <img src=http:&#x2F;&#x2F;0.gravatar.com&#x2F;avatar&#x2F;4523ee21ee63e334517eb3ac134121cc?size&#x3D;400 height=100 width=100 />
-      </div>
-
       <div class="identity section">
         <h1>Oren Mittman</h1>
-        <div class="identity-label">Software Engineer</div>
         <div class="identity-contact">
-          <div><a href="mailto:oren.mittman@gmail.com">oren.mittman@gmail.com</a></div>
-          <div>(410) 802-5604</div>
-          <div><a href=https:&#x2F;&#x2F;github.com&#x2F;nihil2501>github</a></div>
+          <div>
+            <a href="mailto:oren.mittman@gmail.com">oren.mittman@gmail.com</a>
+          </div>
+          <div>(410)802-5604</div>
+          <div>
+            <a href="https://www.linkedin.com/in/oren-mittman-36320339">LinkedIn</a>
+          </div>
+          <div>
+            <a href="https://github.com/nihil2501">Github</a>
+          </div>
         </div>
       </div>
-
     </div>
 
     <dl class="skills">
@@ -104,16 +74,26 @@
           <dt>Expert</dt>
           <dd>
             <ul>
-              <li><strong>Ruby</strong></li>
+              <li>
+                <strong>Ruby</strong>
+              </li>
             </ul>
           </dd>
           <dt>Novice</dt>
           <dd>
             <ul>
-              <li><strong>TypeScript</strong></li>
-              <li><strong>Python</strong></li>
-              <li><strong>Elixir</strong></li>
-              <li><strong>Rust</strong></li>
+              <li>
+                <strong>TypeScript</strong>
+              </li>
+              <li>
+                <strong>Python</strong>
+              </li>
+              <li>
+                <strong>Elixir</strong>
+              </li>
+              <li>
+                <strong>Rust</strong>
+              </li>
             </ul>
           </dd>
         </dl>
@@ -124,15 +104,23 @@
           <dt>Expert</dt>
           <dd>
             <ul>
-              <li><strong>Ruby on Rails</strong></li>
-              <li><strong>Sidekiq</strong></li>
+              <li>
+                <strong>Ruby on Rails</strong>
+              </li>
+              <li>
+                <strong>Sidekiq</strong>
+              </li>
             </ul>
           </dd>
           <dt>Novice</dt>
           <dd>
             <ul>
-              <li><strong>Phoenix</strong></li>
-              <li><strong>React</strong></li>
+              <li>
+                <strong>Phoenix</strong>
+              </li>
+              <li>
+                <strong>React</strong>
+              </li>
             </ul>
           </dd>
         </dl>
@@ -143,14 +131,20 @@
           <dt>Expert</dt>
           <dd>
             <ul>
-              <li><strong>SQL</strong></li>
+              <li>
+                <strong>SQL</strong>
+              </li>
             </ul>
           </dd>
           <dt>Novice</dt>
           <dd>
             <ul>
-              <li><strong>Redis</strong></li>
-              <li><strong>Elasticsearch</strong></li>
+              <li>
+                <strong>Redis</strong>
+              </li>
+              <li>
+                <strong>Elasticsearch</strong>
+              </li>
             </ul>
           </dd>
         </dl>
@@ -161,9 +155,15 @@
           <dt>Novice</dt>
           <dd>
             <ul>
-              <li><strong>AWS</strong></li>
-              <li><strong>Kubernetes</strong></li>
-              <li><strong>Datadog</strong></li>
+              <li>
+                <strong>AWS</strong>
+              </li>
+              <li>
+                <strong>Kubernetes</strong>
+              </li>
+              <li>
+                <strong>Datadog</strong>
+              </li>
             </ul>
           </dd>
         </dl>
@@ -174,11 +174,21 @@
       <dt>Tools</dt>
       <dd>
         <ul>
-          <li><strong>TDD</strong></li>
-          <li><strong>Git &amp; GitHub</strong></li>
-          <li><strong>Jira</strong></li>
-          <li><strong>Confluence</strong></li>
-          <li><strong>Agile</strong></li>
+          <li>
+            <strong>TDD</strong>
+          </li>
+          <li>
+            <strong>Git &amp; GitHub</strong>
+          </li>
+          <li>
+            <strong>Jira</strong>
+          </li>
+          <li>
+            <strong>Confluence</strong>
+          </li>
+          <li>
+            <strong>Agile</strong>
+          </li>
         </ul>
       </dd>
     </dl>

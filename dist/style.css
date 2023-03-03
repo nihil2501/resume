@@ -1,0 +1,93 @@
+body {
+  font-family: monospace;
+  background: rgb(200,215,245);
+  color: rgb(30,30,30);
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  display: flex;
+  max-width: 800px;
+  margin-top: 20px;
+}
+.container .sidebar {
+  flex: 1;
+}
+.subcontainer {
+  padding: 30px;
+}
+.subcontainer:first-child {
+  padding-left: 70px;
+}
+.subcontainer:last-child {
+  padding-right: 70px;
+}
+.container .main-content {
+  flex: 3;
+}
+.section {
+  margin-bottom: 20px;
+}
+.section > * {
+  margin: 0;
+}
+dl, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10;
+}
+ul {
+  list-style: square;
+  padding-left: 5px;
+}
+dd {
+  margin: 0;
+}
+.container .sidebar > dl {
+  margin-left: 0px;
+}
+.identity {
+  margin-bottom: 35px;
+}
+.skills > dd {
+  margin-bottom: 25px; 
+}
+.skills .skill-levels > dd {
+  margin-bottom: 5px;
+}
+.basics .identity-contact {
+  margin-top: 10px;
+  font-size: 11;
+}
+.work, .education {
+  margin-top: 20px;
+}
+.work:first-of-type {
+  margin-top: 0px;
+}
+.work .work-highlight > li {
+  margin-bottom: 20px;
+}
+.experience .experience-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.education.experience .experience-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.experience .experience-summary {
+  display: flex;
+  justify-content: space-between;
+}
+.experience .experience-summary > h2 {
+  margin-bottom: 5px;
+}
+.experience .experience-date {
+  font-size: 16px;
+  margin-block-start: 16.185px;
+  margin-block-end: 5px;
+  margin-bottom: 5px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
