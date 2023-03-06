@@ -147,4 +147,4 @@ export default {
     "Functional Programming",
     "Category Theory"
   ]
-}
+};
