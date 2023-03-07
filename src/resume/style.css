@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   max-width: 800px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .container .sidebar {
   flex: 1;
@@ -35,11 +35,15 @@ body {
 dl, ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+dl {
   margin-left: 10;
 }
 ul {
   list-style: square;
   padding-left: 5px;
+  /* Renders differently in pdf. Would otherwise be 10 */
+  margin-left: 15;
 }
 dd {
   margin: 0;
@@ -59,14 +63,14 @@ dd {
 .basics .identity-contact {
   margin-top: 10px;
 }
-.work, .education {
+.experience {
   margin-top: 20px;
 }
 .work:first-of-type {
   margin-top: 0px;
 }
 .work .work-highlight > li {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .experience .experience-label, .experience .experience-date {
   font-size: 16px;

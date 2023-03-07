@@ -1,0 +1,37 @@
+body {
+  font-family: system-ui;
+  font-size: 14px;
+  background: rgb(200,215,245);
+  color: rgb(30,30,30);
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+	display: flex;
+  max-width: 800px;
+  margin-top: 60px;
+}
+.container .sidebar {
+  flex: 1;
+}
+.subcontainer {
+  padding: 30px;
+}
+.subcontainer:first-child {
+  padding-left: 70px;
+}
+.subcontainer:last-child {
+  padding-right: 70px;
+}
+.container .main-content {
+  flex: 3;
+}
+.section > * {
+  margin: 0;
+}
+.basics .identity-contact {
+  margin-top: 10px;
+}
+p {
+	margin-top: 0px;
+}

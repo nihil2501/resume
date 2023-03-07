@@ -2,7 +2,7 @@ import Mustache from 'mustache';
 import { readFileSync, writeFileSync, realpathSync, mkdirSync } from 'node:fs';
 import puppeteer from 'puppeteer-core';
 
-const artifacts = ['resume'];
+const artifacts = ['resume', 'cover_letter'];
 
 artifacts.forEach(async (artifact) => {
   const data = (await import(`./src/${artifact}/data.js`)).default;

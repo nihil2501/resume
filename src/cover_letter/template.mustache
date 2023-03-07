@@ -1,0 +1,40 @@
+<html>
+<head>
+<link href="../../src/cover_letter/style.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+  <div class="subcontainer main-content">
+    <h2>Dear {{recipient}},</h2>
+    {{#paragraphs}}
+    <p>{{.}}</p>
+    {{/paragraphs}}
+    <span>Sincerely,</span>
+    <br />
+    <span>{{basics.name}}</span>
+  </div>
+
+  <div class="subcontainer sidebar">
+    <div class="basics">
+      {{#basics}}
+      <div class="identity section">
+        <h1>{{name}}</h1>
+        <span>{{label}}</span>
+        <div class="identity-contact">
+          <div>
+            <a href="mailto:{{email}}">{{email}}</a>
+          </div>
+          <div>{{phone}}</div>
+          {{#profiles}}
+          <div>
+            <a href="{{{url}}}">{{network}}</a>
+          </div>
+          {{/profiles}}
+        </div>
+      </div>
+      {{/basics}}
+    </div>
+  </div>
+</div>
+</body>
+</html>

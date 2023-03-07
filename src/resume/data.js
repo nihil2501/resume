@@ -1,7 +1,7 @@
 export default {
   "basics": {
     "name": "Oren Mittman",
-    "label": "Software Engineer",
+    "label": "Senior Software Engineer",
     "image": "pfp.png",
     "email": "oren.mittman@gmail.com",
     "phone": "(410)802-5604",
