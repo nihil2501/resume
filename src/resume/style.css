@@ -14,6 +14,9 @@ body {
 .container .sidebar {
   flex: 1;
 }
+.container .main-content {
+  flex: 3;
+}
 .subcontainer {
   padding: 30px;
 }
@@ -22,9 +25,6 @@ body {
 }
 .subcontainer:last-child {
   padding-right: 70px;
-}
-.container .main-content {
-  flex: 3;
 }
 .section {
   margin-bottom: 20px;
@@ -53,6 +53,9 @@ dd {
 }
 .identity {
   margin-bottom: 25px;
+}
+.identity .identity-label {
+  font-size: 16px;
 }
 .skills > dd {
   margin-bottom: 25px; 

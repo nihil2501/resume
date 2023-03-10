@@ -1,6 +1,8 @@
 node_modules
-**/*.pdf
 **/.DS_Store
+
+# too big to track
+**/*.pdf
 
 # private, company-specific info within data.js and the built artifact
 src/cover_letter/data.js
