@@ -9,13 +9,18 @@ body {
 .container {
 	display: flex;
   max-width: 800px;
-  margin-top: 40px;
+  margin-top: 70px;
+  flex-direction: column;
 }
-.container .sidebar {
+.partial-container {
+	display: flex;
+}
+.container .subcontainer.sidebar {
   flex: 1;
 }
 .subcontainer {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .subcontainer:first-child {
   padding-left: 70px;
@@ -23,7 +28,7 @@ body {
 .subcontainer:last-child {
   padding-right: 70px;
 }
-.container .main-content {
+.container .subcontainer.main-content {
   flex: 3;
 }
 .section > * {
