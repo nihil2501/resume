@@ -5,6 +5,7 @@ export default {
     "image": "pfp.png",
     "email": "oren.mittman@gmail.com",
     "phone": "(410)802-5604",
+    "phoneTel": "+14108025604",
     "summary": "I relish the depth and creativity of software engineering and take pride in my contributions to software projects. I have fifteen years of experience designing and implementing robust server-sides that power e-commerce applications serving millions of users and tens of thousands of businesses. In the next phase of my career, I want to move down the stack and help engineer the distributed systems on top of which web applications are built. My greatest wish is to work in an environment where continual learning and collaboration foster the creation of great software.",
     "profiles": [
       {
@@ -34,7 +35,7 @@ export default {
         "Mentored 5 engineers by regularly conducting code reviews, pair programming, and collaborating to break down large tasks",
         "Integrated ARP into VA.gov's micro-frontend platform, using its design and forms systems to achieve consistency and scalability",
         "Built benefits claim management workflows by orchestrating multiple upstream microservices and legacy systems",
-        "Productionized ARP beyond a successful pilot phase, establishing comprehensive observability in Datadog for performance and key business metrics"
+        "Productionized ARP beyond a successful pilot phase, establishing comprehensive observability in Datadog of key software performance and business metrics"
       ]
     },
     {
@@ -87,25 +88,26 @@ export default {
         {
           "name": "Expert",
           "items": [
-            "Ruby"
+            "Ruby",
+            "JavaScript"
           ]
         },
         {
           "name": "Intermediate",
           "items": [
-            "TypeScript"
+            "TypeScript",
+            "Python",
+            "Elixir",
+            "C#"
           ]
         },
         {
           "name": "Novice",
           "items": [
-            "Python",
-            "Elixir",
             "Rust",
             "Java",
             "Elm",
-            "Go",
-            "C#"
+            "Go"
           ]
         }
       ]
@@ -149,6 +151,18 @@ export default {
           "items": [
             "Redis",
             "Elasticsearch"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "levels": [
+        {
+          "name": "Intermediate",
+          "items": [
+            "HTML",
+            "CSS"
           ]
         }
       ]
