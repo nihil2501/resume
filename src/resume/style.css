@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
 }
 .container {
   display: flex;
@@ -75,13 +76,13 @@ dd {
 }
 .experience .experience-name {
   display: flex;
+  align-items: end;
 }
 .experience .experience-name .experience-name-subname {
   margin-left: 5px;
   font-size: 12px;
 }
 .experience .experience-name .experience-name-subname, .experience .experience-date {
-  align-self: flex-end;
   margin-bottom: 5px;
 }
 .education.experience .experience-label {
@@ -90,6 +91,7 @@ dd {
 .experience .experience-summary {
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
 .experience .experience-summary h2 {
   margin-bottom: 5px;
