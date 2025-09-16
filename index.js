@@ -25,7 +25,13 @@ artifacts.forEach(async (artifact) => {
   await page.pdf({
     path: `${distDirName}/${artifact}.pdf`,
     printBackground: true,
-    format: 'letter'
+    format: 'letter',
+    margin: {
+      top: '0.5in',
+      bottom: '0.5in',
+      left: '0.5in',
+      right: '0.5in'
+    }
   });
 
   await browser.close();

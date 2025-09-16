@@ -1,15 +1,13 @@
 body {
+  margin: 0px;
   font-family: system-ui;
   font-size: 14px;
-  background: rgb(200,215,245);
-  color: rgb(30,30,30);
   display: flex;
   justify-content: space-around;
 }
 .container {
   display: flex;
   max-width: 800px;
-  margin-top: 40px;
 }
 .container .sidebar {
   flex: 1;
@@ -17,17 +15,11 @@ body {
 .container .main-content {
   flex: 3;
 }
-.subcontainer {
-  padding: 30px;
-}
 .subcontainer:first-child {
-  padding-left: 70px;
+  padding-right: 30px;
 }
 .subcontainer:last-child {
-  padding-right: 70px;
-}
-.section {
-  margin-bottom: 20px;
+  padding-left: 30px;
 }
 .section > * {
   margin: 0;
@@ -58,7 +50,10 @@ dd {
   font-size: 16px;
 }
 .skills > dd {
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
+}
+.tools, .methodologies {
+  margin-bottom: 25px;
 }
 .skills .skill-levels > dd {
   margin-bottom: 5px;
@@ -81,11 +76,11 @@ dd {
 .experience .experience-name {
   display: flex;
 }
-.experience .experience-name .experience-name-acquirer {
+.experience .experience-name .experience-name-subname {
   margin-left: 5px;
   font-size: 12px;
 }
-.experience .experience-name .experience-name-acquirer, .experience .experience-date {
+.experience .experience-name .experience-name-subname, .experience .experience-date {
   align-self: flex-end;
   margin-bottom: 5px;
 }

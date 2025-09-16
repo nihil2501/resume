@@ -12,9 +12,9 @@
         <div class="experience-summary">
           <div class="experience-name">
             <h2>{{name}}</h2>
-            {{#acquirerName}}
-            <em class="experience-name-acquirer">acquired by {{acquirerName}}</em>
-            {{/acquirerName}}
+            {{#subName}}
+            <em class="experience-name-subname">{{{subName}}}</em>
+            {{/subName}}
           </div>
           <div class="experience-date">{{startDate}} → {{endDate}}</div>
         </div>
@@ -94,6 +94,19 @@
             <strong>{{.}}</strong>
           </li>
         {{/tools}}
+        </ul>
+      </dd>
+    </dl>
+
+    <dl class="methodologies">
+      <dt>Methodologies</dt>
+      <dd>
+        <ul>
+        {{#methodologies}}
+          <li>
+            <strong>{{.}}</strong>
+          </li>
+        {{/methodologies}}
         </ul>
       </dd>
     </dl>
