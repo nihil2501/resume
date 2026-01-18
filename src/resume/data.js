@@ -106,6 +106,7 @@ export default {
           "items": [
             "Rust",
             "Java",
+            "Dart",
             "Elm",
             "Go"
           ]
@@ -132,7 +133,9 @@ export default {
         {
           "name": "Novice",
           "items": [
-            "Phoenix"
+            "Phoenix",
+            "SolidJS",
+            "Flutter"
           ]
         }
       ]
