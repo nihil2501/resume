@@ -27,7 +27,7 @@ export default {
       "position": "Senior Fullstack Engineer, Senior Engineering Lead",
       "url": "https://www.va.gov",
       "startDate": "10.2023",
-      "endDate": "09.2025",
+      "endDate": "Present",
       "summary": "Developed and operated a new web application called Accredited Representative Portal (ARP) for accredited representatives to manage Veterans' benefits claims with the Department of Veterans Affairs.",
       "highlights": [
         "Architected a new application, the Accredited Representative Portal (ARP), as a modern React Router single-page application backed by a Ruby on Rails REST API",
@@ -35,7 +35,8 @@ export default {
         "Mentored 5 engineers by regularly conducting code reviews, pair programming, and collaborating to break down large tasks",
         "Integrated ARP into VA.gov's micro-frontend platform, using its design and forms systems to achieve consistency and scalability",
         "Built benefits claim management workflows by orchestrating multiple upstream microservices and legacy systems",
-        "Productionized ARP beyond a successful pilot phase, establishing comprehensive observability in Datadog of key software performance and business metrics"
+        "Productionized ARP beyond a successful pilot phase, establishing comprehensive observability in Datadog of key software performance and business metrics",
+        "Worked with stakeholders to implement UX and system integration enhancements that improved outcomes for Veterans seeking accelerated delivery of disability benefits"
       ]
     },
     {
